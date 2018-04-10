@@ -14,6 +14,9 @@
 "make the time for the jk==<esc> macro shorter
 "possibly add a map to make it so <leader>w and <leader>b are on h and l for easymotion
 "when i hit backspace in insert mode and there is nothing on the line but whitespace i want it to nuke the whole line and put me at the end of the previous line
+"make it update this.
+"make sure any changes support prose editing as well as code editing.
+"make sure and new macros are useable on the phone keyboard. list easily accessable symbols for phone keyboard
 
 "PLUGINS
 call plug#begin('~/.vim/plugged')

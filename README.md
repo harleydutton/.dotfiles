@@ -1,8 +1,7 @@
 # dotfiles
+This repo contains my dotfiles.
+General TODO is here.
+TODO's for individual dotfiles will be at the top of the respective file.
 
-
-this repo contains my dotfiles. i have just gotten around to cleansing my vimrc and now i want to sync it with my phone. 
-
-when possible each dotfile will have its own TODO. more general TODO's will appear here.
-
-i should make and update my bashrc. i should ask marco for hiw bashrc as a starting point.
+TODO:
+Figure out how to make a .bashrc then to it.
