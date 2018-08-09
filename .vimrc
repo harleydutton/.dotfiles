@@ -56,7 +56,6 @@ inoremap jk <esc>
 inoremap kj <esc>
 inoremap jj <esc>
 inoremap kk <esc>
-inoremap hh <esc>
 
 "MOTIONS
 nnoremap <leader>k <c-b>zz
@@ -161,10 +160,8 @@ endfunction
 
 nnoremap <f1> :echo CanDive()<cr>
 nnoremap <f2> :call Dive()<cr>
-nnoremap <silent> j :call IfCanDiveDiveElseJ()<cr>
 nnoremap <f3> :echo CanUnDive()<cr>
 nnoremap <f4> :call UnDive()<cr>
-nnoremap <silent> k :call IfCanUnDiveUnDiveElseK()<cr>
 
 
 " [bufnum, lnum, col, off, curswant]
