@@ -2,10 +2,6 @@
 set nu "display line numbers
 set spelllang=en_us "for use with ":set spell" and ":set spell!"
 
-"BACKSPACE
-set backspace=indent,eol,start
-nnoremap <bs> X
-
 "SEARCH OPTIONS
 set ic "ignore case in searches
 set hls "highlight searches
