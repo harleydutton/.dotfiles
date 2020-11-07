@@ -16,4 +16,9 @@ zstyle ':vcs_info:git:*' formats '%b'
 #PROMPT
 PROMPT='%n@%m %~ %# '
 
-
+#TAB-COMPLETE
+autoload -U compinit promptinit
+promptinit
+compinit -i
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+fpath=(/usr/local/share/zsh-completions $fpath)
