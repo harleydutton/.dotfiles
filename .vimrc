@@ -9,7 +9,7 @@ set hls "highlight searches
 nnoremap <cr> :noh<cr>:<bs><cr>
 
 "WRAP
-set colorcolumn=80 "this highlights the 80th column
+set colorcolumn=120 "this highlights the 80th column
 set linebreak "this wraps on clean breaks rather than at the cutoff
 autocmd FileType * set formatoptions-=c
 
