@@ -7,6 +7,20 @@ java19(){ export JAVA_HOME=`/usr/libexec/java_home -v 19.0` }
 java11
 export PATH="$PATH:$JAVA_HOME/bin"
 
+#KUBERNETES
+alias kc="kubectl"
+alias kgn="kc get ns"
+alias kgp="kc get pods"
+alias kdp="kc describe pods"
+alias keti="kc exec -ti"
+alias klf="kc logs -f"
+alias kcgc="kc config get-contexts"
+alias kccc="kc config current-context"
+alias kcuc="kc config use-context"
+globalb(){
+  export KUBECONFIG="$HOME/.kube/eks-rome-globalb_p2996224.config"
+  kubectl config set-context --current --namespace=datadog
+}
 
 #HISTORY
 HISTFILE=~/.histfile
