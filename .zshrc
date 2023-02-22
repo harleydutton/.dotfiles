@@ -40,18 +40,22 @@ bindkey "^[[B" history-beginning-search-forward-end
 alias hist="history -i 0"
 alias hg=hist|grep
 
-#PROMPT
-PROMPT='%n@%m %~ %# '
-
-#GIT BRANCH
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
+#GIT
+autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '%b'
-git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+add-zsh-hook precmd vcs_info
+RPROMPT='${vcs_info_msg_0_}'
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' unstagedstr ' *'
+zstyle ':vcs_info:*' stagedstr ' +'
+zstyle ':vcs_info:git:*' formats '%b%u%c'
+git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)      %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.dl "branch -D"
+git config --global alias.dr "push -d origin"
+alias gs="git status"
 
+#PROMPT
+PROMPT='%~ > '
 
 #TAB-COMPLETE
 autoload -U compinit promptinit
