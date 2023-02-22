@@ -1,10 +1,8 @@
 #JAVA
 java8(){ export JAVA_HOME=`/usr/libexec/java_home -v 1.8` }
 java11(){ export JAVA_HOME=`/usr/libexec/java_home -v 11.0` }
-java15(){ export JAVA_HOME=`/usr/libexec/java_home -v 15.0` }
-java17(){ export JAVA_HOME=`/usr/libexec/java_home -v 17.0` }
-java19(){ export JAVA_HOME=`/usr/libexec/java_home -v 19.0` }
-java11
+java17(){ export JAVA_HOME=`~/.java/jdk-17.0.6+10 }
+java17
 export PATH="$PATH:$JAVA_HOME/bin"
 
 #KUBERNETES
