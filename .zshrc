@@ -1,8 +1,13 @@
+#OH-MY-ZSH
+ZSH_THEME="random"
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
+#PLUGINS
+plugins=(git)
+
 #JAVA
-java8(){ export JAVA_HOME=`/usr/libexec/java_home -v 1.8` }
-java11(){ export JAVA_HOME=`/usr/libexec/java_home -v 11.0` }
-java17(){ export JAVA_HOME=`~/.java/jdk-17.0.6+10 }
-java17
+export JAVA_HOME=~/.java/jdk-17.0.6+10
 export PATH="$PATH:$JAVA_HOME/bin"
 
 #KUBERNETES
@@ -25,6 +30,10 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
+HIST_STAMPS="yyyy--mm-dd"
+
+#PROMPT
+PROMPT='%n@%m %~ %# '
 
 #GIT BRANCH
 autoload -Uz vcs_info
@@ -36,8 +45,6 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%b'
 git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-#PROMPT
-PROMPT='%n@%m %~ %# '
 
 #TAB-COMPLETE
 autoload -U compinit promptinit
@@ -45,3 +52,4 @@ promptinit
 compinit -i
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 fpath=(/usr/local/share/zsh-completions $fpath)
+
