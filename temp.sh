@@ -13,6 +13,7 @@ if [[ "$PLATFORM" =~ *"$SUB"* ]]; then
 fi
 
 
+homebrew works on all of theses...
 
 
 
