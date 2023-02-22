@@ -7,7 +7,8 @@ source $ZSH/oh-my-zsh.sh
 plugins=(git)
 
 #JAVA
-export JAVA_HOME=~/.java/jdk-17.0.6+10
+java17(){ export JAVA_HOME=~/.java/jdk-17.0.6+10 }
+java17
 export PATH="$PATH:$JAVA_HOME/bin"
 
 #KUBERNETES
@@ -28,15 +29,16 @@ globalb(){
 #HISTORY
 HISTFILE=~/.histfile
 HISTSIZE=1000
-SAVEHIST=1000
-setopt appendhistory
+SAVEHIST=10000
 HIST_STAMPS="yyyy--mm-dd"
+setopt appendhistory
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
-alias hg='history | grep'
+alias hist="history -i 0"
+alias hg=hist|grep
 
 #PROMPT
 PROMPT='%n@%m %~ %# '
@@ -47,7 +49,6 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
-# PROMPT=\$vcs_info_msg_0_'%# '
 zstyle ':vcs_info:git:*' formats '%b'
 git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
