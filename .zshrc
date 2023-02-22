@@ -31,6 +31,11 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
 HIST_STAMPS="yyyy--mm-dd"
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
 
 #PROMPT
 PROMPT='%n@%m %~ %# '
