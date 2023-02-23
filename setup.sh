@@ -6,10 +6,8 @@ cp .zshrc ~/.zshrc
 PM="something or other"
 
 
-#cli=vim zsh tmux
-#apps=discord obsidian chrome
-#extensions=bitwarden
-#languages=java17
+#cli=vim zsh tmux git python3 ssh java
+#apps=discord obsidian chrome bitwarden
 
 #install commentary for vim
 mkdir -p ~/.vim/pack/tpope/start
