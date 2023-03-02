@@ -1,7 +1,7 @@
 #OH-MY-ZSH (how do I install this? do I need to at this point?)
-/* export ZSH="$HOME/.oh-my-zsh" */
-/* source $ZSH/oh-my-zsh.sh */
-/* plugins=(git) */
+# export ZSH="$HOME/.oh-my-zsh" 
+# source $ZSH/oh-my-zsh.sh 
+# plugins=(git) 
 
 #PROMPT
 PROMPT='%~ > '
@@ -42,29 +42,29 @@ git config --global alias.dr "push -d origin"
 git config --global alias.empty-commit "commit --allow-empty -m 'empty commit'"
 alias gs="git status -s"
 #TODO: add the setting ot automatically configure upstreams
-/* $ git config --global push.autoSetupRemote true */
-/* That command will add to your ~/.gitconfig: */
-/* [push] */
-/*     autoSetupRemote = true */
-/* I also want something that will automatically fetch pretty regularly. */
+# $ git config --global push.autoSetupRemote true 
+# That command will add to your ~/.gitconfig: 
+# [push] 
+#     autoSetupRemote = true 
+# I also want something that will automatically fetch pretty regularly.
 
 #JAVA
-/* java11(){ export JAVA_HOME=`/usr/libexec/java_home -v 11.0` } */
-/* java17(){ export JAVA_HOME=~/.java/jdk-17.0.6+10 } */
-/* java11 */
-/* export PATH="$PATH:$JAVA_HOME/bin" */ #some of this belongs in .profile
+# java11(){ export JAVA_HOME=`/usr/libexec/java_home -v 11.0` } 
+# java17(){ export JAVA_HOME=~/.java/jdk-17.0.6+10 } 
+# java11 
+# export PATH="$PATH:$JAVA_HOME/bin"  #some of this belongs in .profile
 
 #KUBERNETES
-/* alias kc="kubectl" */
-/* alias keti="kc exec -ti" */
-/* alias kcgc="kc config get-contexts" */
-/* alias kccc="kc config current-context" */
-/* alias kcuc="kc config use-context" */
-/* globald(){ */
-/*     export KUBECONFIG="$HOME/.kube/eks-rome-globald_p2996224.config" */
-/*     kubectl config set-context --current --namespace=scl-dev */
-/* } */
-/* globald */
+# alias kc="kubectl" 
+# alias keti="kc exec -ti" 
+# alias kcgc="kc config get-contexts" 
+# alias kccc="kc config current-context"
+# alias kcuc="kc config use-context" 
+# globald(){ 
+#     export KUBECONFIG="$HOME/.kube/eks-rome-globald_p2996224.config" 
+#     kubectl config set-context --current --namespace=scl-dev 
+# } 
+# globald 
 
 # TODO
 # eval $(ssh-agent); ssh-add ~/.ssh/github
