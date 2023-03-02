@@ -1,8 +1,3 @@
-#OH-MY-ZSH (how do I install this? do I need to at this point?)
-# export ZSH="$HOME/.oh-my-zsh" 
-# source $ZSH/oh-my-zsh.sh 
-# plugins=(git) 
-
 #PROMPT
 PROMPT='%~ > '
 
