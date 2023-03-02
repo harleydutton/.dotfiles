@@ -2,20 +2,17 @@
 cd ~
 git init
 git remote add origin git@github.com:harleydutton/dotfiles.git
-echo .* >> .gitignore
-echo * >> .gitignore
-git checkout -b temp
-git add .
-git commit -m "initial commit"
-git checkout master
-git pull origin master --allow-unrelated-histories
+echo "*" >> .gitignore
+git commit --allow-empty -m "from setup.sh"
+git branch --set-upstream-to=origin/<branch> master
+git pull --rebase -X theirs --allow-unrelated-histories
 # rm -rf ./dotfiles
 
 #install commentary for vim
-mkdir -p ~/.vim/pack/tpope/start
-cd ~/.vim/pack/tpope/start
-git clone https://tpope.io/vim/commentary.git
-vim -u NONE -c "helptags commentary/doc" -c q
+# mkdir -p ~/.vim/pack/tpope/start
+# cd ~/.vim/pack/tpope/start
+# git clone https://tpope.io/vim/commentary.git
+# vim -u NONE -c "helptags commentary/doc" -c q
 
 
 #determine package manager
