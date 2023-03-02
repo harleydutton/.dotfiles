@@ -1,5 +1,3 @@
-echo "using .profile"
-
 #PATH
 export PATH=/Users/P2996224/Tools/apache-maven-3.9.0/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
