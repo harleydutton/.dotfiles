@@ -1,9 +1,15 @@
 #place dotfiles repo in home
 cd ~
 git init
-git remote add git@github.com:harleydutton/dotfiles.git
+git remote add origin git@github.com:harleydutton/dotfiles.git
+echo .* >> .gitignore
+echo * >> .gitignore
+git checkout -b temp
+git add .
+git commit -m "initial commit"
+git checkout master
 git pull origin master --allow-unrelated-histories
-rm -rf ./dotfiles
+# rm -rf ./dotfiles
 
 #install commentary for vim
 mkdir -p ~/.vim/pack/tpope/start
