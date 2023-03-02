@@ -46,6 +46,7 @@ alias gs="git status -s"
 /* That command will add to your ~/.gitconfig: */
 /* [push] */
 /*     autoSetupRemote = true */
+/* I also want something that will automatically fetch pretty regularly. */
 
 #JAVA
 /* java11(){ export JAVA_HOME=`/usr/libexec/java_home -v 11.0` } */
