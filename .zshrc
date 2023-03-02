@@ -18,7 +18,7 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 alias hist="history -i 0"
-alias hg=hist|grep
+alias hg="hist|grep"
 
 #TAB-COMPLETE
 autoload -U compinit promptinit
