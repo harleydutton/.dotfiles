@@ -60,3 +60,4 @@ alias gs="git status -s"
 # eval $(ssh-agent); ssh-add ~/.ssh/github
 # probably keychain rather than this
 # perhaps write a script to setup .ssh/github on a new machine
+# fix commentary comments in .zshrc
