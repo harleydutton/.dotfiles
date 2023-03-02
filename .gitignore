@@ -1,5 +1,4 @@
 #maybe?
-.bashrc
 .oh-my-zsh/
 .vim/
 .kube/
@@ -8,7 +7,6 @@
 #don't track
 .bash_history
 .bash_logout
-.bash_profile
 .cache/
 .config/
 .histfile
@@ -32,7 +30,6 @@ shell/
 *.swp
 .CFUserTextEncoding
 .DS_Store
-.zprofile
 .zsh_sessions/
 Applications/
 Desktop/
