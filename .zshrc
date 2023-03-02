@@ -1,4 +1,4 @@
-#OH-MY-ZSH
+#OH-MY-ZSH (how do I install this? do I need to at this point?)
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
@@ -10,7 +10,7 @@ java17(){ export JAVA_HOME=~/.java/jdk-17.0.6+10 }
 java17
 export PATH="$PATH:$JAVA_HOME/bin"
 
-#KUBERNETES
+#KUBERNETES (look into the oh-my-zsh plugin thing and probably delete most of these)
 alias kc="kubectl"
 alias kgn="kc get ns"
 alias kgp="kc get pods"
