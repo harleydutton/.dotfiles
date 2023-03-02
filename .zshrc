@@ -60,10 +60,6 @@ alias gs="git status -s"
 /* } */
 /* globald */
 
-#PATH (move all PATH exports to .profile)
-export PATH=/Users/P2996224/Tools/apache-maven-3.9.0/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
-
 # TODO
 # eval $(ssh-agent); ssh-add ~/.ssh/github
 # probably keychain rather than this
