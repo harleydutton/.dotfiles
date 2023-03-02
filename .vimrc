@@ -20,9 +20,10 @@ inoremap jj <esc>
 inoremap kk <esc>
 
 "MOTIONS
-let mapleader=" "
-nnoremap <leader>k <c-b>zz
-nnoremap <leader>j <c-f>zz
+"get easymotion or something
+" let mapleader=" "
+" nnoremap <leader>k <c-b>zz
+" nnoremap <leader>j <c-f>zz
 
 "STATUS LINE
 set laststatus=2 "status line always on

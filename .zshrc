@@ -1,5 +1,4 @@
 #OH-MY-ZSH
-ZSH_THEME="random"
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
@@ -65,3 +64,5 @@ compinit -i
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+#SILVERBLUE
+alias pm="rpm-ostree"
