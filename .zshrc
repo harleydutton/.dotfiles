@@ -53,6 +53,7 @@ git config --global alias.dl "branch -D"
 git config --global alias.dr "push -d origin"
 git config --global alias.empty-commit "commit --allow-empty -m 'empty commit'"
 alias gs="git status"
+# eval $(ssh-agent); ssh-add ~/.ssh/github
 
 #PROMPT
 PROMPT='%~ > '

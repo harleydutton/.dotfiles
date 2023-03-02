@@ -11,13 +11,13 @@ git pull origin master --rebase -X theirs --allow-unrelated-histories
 rm -rf ./dotfiles
 
 #installs
-./.scripts/install-commentary.sh
+.scripts/install-commentary.sh
 
 
 #determine package manager
 # PM="something or other"
 
-#cli=vim zsh python3 ssh java
+#cli=vim zsh python3 ssh java keychain
 #some kind of clipboard manager
 #apps=discord obsidian chrome bitwarden
 #silverblue= fuzzel waybar sway
