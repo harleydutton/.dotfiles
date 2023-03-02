@@ -1,15 +1,15 @@
 "MISCELLANEOUS
-set nu "display line numbers
+set nu "line numbers on
+command NU set nu! nu? "adds line numbers toggle command
 set spelllang=en_us "for use with ":set spell" and ":set spell!"
 
 "SEARCH OPTIONS
 set ic "ignore case in searches
 set hls "highlight searches
-"this macro removes search highlighting when you press enter
-nnoremap <cr> :noh<cr>:<bs><cr>
+nnoremap <cr> :noh<cr>:<bs><cr> "enter: removes search highlighting
 
 "WRAP
-set colorcolumn=120 "this highlights the 80th column
+set colorcolumn=120 "this highlights the 120th column
 set linebreak "this wraps on clean breaks rather than at the cutoff
 autocmd FileType * set formatoptions-=c
 
