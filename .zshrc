@@ -31,10 +31,6 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
 zstyle ':vcs_info:git:*' formats '%b%u%c'
-git config --global alias.ll "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)      %C(bold blue)<%an>%Creset' --abbrev-commit"
-git config --global alias.dl "branch -D"
-git config --global alias.dr "push -d origin"
-git config --global alias.empty-commit "commit --allow-empty -m 'empty commit'"
 alias gs="git status -s"
 # I also want something that will automatically fetch pretty regularly.
 
