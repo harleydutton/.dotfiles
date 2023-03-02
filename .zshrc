@@ -1,8 +1,3 @@
-#OH-MY-ZSH (how do I install this? do I need to at this point?)
-# export ZSH="$HOME/.oh-my-zsh" 
-# source $ZSH/oh-my-zsh.sh 
-# plugins=(git) 
-
 #PROMPT
 PROMPT='%~ > '
 
@@ -18,7 +13,7 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 alias hist="history -i 0"
-alias hg=hist|grep
+alias hg="hist|grep"
 
 #TAB-COMPLETE
 autoload -U compinit promptinit
@@ -46,6 +41,7 @@ alias gs="git status -s"
 # That command will add to your ~/.gitconfig: 
 # [push] 
 #     autoSetupRemote = true 
+# I also want something that will automatically fetch pretty regularly.
 
 #JAVA
 java8(){ export JAVA_HOME=`/usr/libexec/java_home -v 1.8` }
@@ -84,15 +80,15 @@ poc124(){
 }
 globald
 
-#PATH (move all PATH exports to .profile)
-export PATH=/Users/P2996224/Tools/apache-maven-3.9.0/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
-
 #CHARTER
 rvpn(){
     launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
     launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
 }
+
+#PATH (move all PATH exports to .profile)
+export PATH=/Users/P2996224/Tools/apache-maven-3.9.0/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # eval $(ssh-agent); ssh-add ~/.ssh/github
 # probably keychain rather than this
