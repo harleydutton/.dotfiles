@@ -1,29 +1,10 @@
 #OH-MY-ZSH (how do I install this? do I need to at this point?)
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
+/* export ZSH="$HOME/.oh-my-zsh" */
+/* source $ZSH/oh-my-zsh.sh */
+/* plugins=(git) */
 
-#PLUGINS
-plugins=(git)
-
-#JAVA
-java17(){ export JAVA_HOME=~/.java/jdk-17.0.6+10 }
-java17
-export PATH="$PATH:$JAVA_HOME/bin"
-
-#KUBERNETES (look into the oh-my-zsh plugin thing and probably delete most of these)
-alias kc="kubectl"
-alias kgn="kc get ns"
-alias kgp="kc get pods"
-alias kdp="kc describe pods"
-alias keti="kc exec -ti"
-alias klf="kc logs -f"
-alias kcgc="kc config get-contexts"
-alias kccc="kc config current-context"
-alias kcuc="kc config use-context"
-globalb(){
-  export KUBECONFIG="$HOME/.kube/eks-rome-globalb_p2996224.config"
-  kubectl config set-context --current --namespace=datadog
-}
+#PROMPT
+PROMPT='%~ > '
 
 #HISTORY
 HISTFILE=~/.histfile
@@ -39,6 +20,13 @@ bindkey "^[[B" history-beginning-search-forward-end
 alias hist="history -i 0"
 alias hg=hist|grep
 
+#TAB-COMPLETE
+autoload -U compinit promptinit
+promptinit
+compinit -i
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 #GIT
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
@@ -53,17 +41,61 @@ git config --global alias.dl "branch -D"
 git config --global alias.dr "push -d origin"
 git config --global alias.empty-commit "commit --allow-empty -m 'empty commit'"
 alias gs="git status"
+
+#JAVA
+java8(){ export JAVA_HOME=`/usr/libexec/java_home -v 1.8` }
+java11(){ export JAVA_HOME=`/usr/libexec/java_home -v 11.0` }
+java15(){ export JAVA_HOME=`/usr/libexec/java_home -v 15.0` }
+java17(){ export JAVA_HOME=`/usr/libexec/java_home -v 17.0` }
+java19(){ export JAVA_HOME=`/usr/libexec/java_home -v 19.0` }
+java11
+export PATH="$PATH:$JAVA_HOME/bin"
+
+#KUBERNETES (look into the oh-my-zsh plugin thing and probably delete most of these)
+alias kc="kubectl"
+alias kgn="kc get ns"
+alias kgp="kc get pods"
+alias kdp="kc describe pods"
+alias keti="kc exec -ti"
+alias klf="kc logs -f"
+alias kcgc="kc config get-contexts"
+alias kccc="kc config current-context"
+alias kcuc="kc config use-context"
+globalb(){
+    export KUBECONFIG="$HOME/.kube/eks-rome-globalb_p2996224.config"
+    kubectl config set-context --current --namespace=datadog
+}
+globald(){
+    export KUBECONFIG="$HOME/.kube/eks-rome-globald_p2996224.config"
+    kubectl config set-context --current --namespace=scl-dev
+}
+globale(){
+    export KUBECONFIG="$HOME/.kube/eks-rome-globale_p2996224.config"
+    kubectl config set-context --current --namespace=datadog
+}
+poc124(){
+    export KUBECONFIG="$HOME/.kube/eks-rome-poc124_p2996224.config"
+    kubectl config set-context --current --namespace=datadog
+}
+globald
+
+
+
+#PATH (move to .profile)
+export PATH=/Users/P2996224/Tools/apache-maven-3.9.0/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+
+
+#CHARTER
+rvpn(){
+    launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
+    launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
+}
+
+
+# move all PATH exports to .profile
 # eval $(ssh-agent); ssh-add ~/.ssh/github
+# probably keychain rather than this
+# perhaps write a script to setup .ssh/github on a new machine
 
-#PROMPT
-PROMPT='%~ > '
 
-#TAB-COMPLETE
-autoload -U compinit promptinit
-promptinit
-compinit -i
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-#SILVERBLUE
-alias pm="rpm-ostree"

@@ -19,23 +19,14 @@ inoremap kj <esc>
 inoremap jj <esc>
 inoremap kk <esc>
 
-"MOTIONS
-"get easymotion or something
-" let mapleader=" "
-" nnoremap <leader>k <c-b>zz
-" nnoremap <leader>j <c-f>zz
-
 "STATUS LINE
 set laststatus=2 "status line always on
 set statusline=
 set statusline+=[col:%c]
-set statusline+=[loc:%P]
-set statusline+=%m
 set statusline+=[%{getcwd()}/%t]
+set statusline+=%m
 
 "INDENT
 set tabstop=4 "this make a tab be 4 spaces
 set expandtab "this akes tabs be as spaces
 set shiftwidth=4 "chnges the shift width of the visual < and > commands
-
-
