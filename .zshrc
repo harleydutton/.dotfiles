@@ -36,11 +36,6 @@ git config --global alias.dl "branch -D"
 git config --global alias.dr "push -d origin"
 git config --global alias.empty-commit "commit --allow-empty -m 'empty commit'"
 alias gs="git status -s"
-#TODO: add the setting ot automatically configure upstreams
-# $ git config --global push.autoSetupRemote true 
-# That command will add to your ~/.gitconfig: 
-# [push] 
-#     autoSetupRemote = true 
 # I also want something that will automatically fetch pretty regularly.
 
 #JAVA
