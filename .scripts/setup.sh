@@ -5,7 +5,7 @@ git remote add origin git@github.com:harleydutton/dotfiles.git
 echo "*" >> .gitignore
 git commit --allow-empty -m "from setup.sh"
 git pull origin master --rebase -X theirs --allow-unrelated-histories
-# rm -rf ./dotfiles
+rm -rf ./dotfiles
 
 #install commentary for vim
 # mkdir -p ~/.vim/pack/tpope/start
