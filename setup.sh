@@ -6,8 +6,10 @@ cp .zshrc ~/.zshrc
 PM="something or other"
 
 
-#cli=vim zsh tmux git python3 ssh java
+#cli=vim zsh git python3 ssh java
+#some kind of clipboard manager
 #apps=discord obsidian chrome bitwarden
+#silverblue= fuzzel waybar sway
 
 #install commentary for vim
 mkdir -p ~/.vim/pack/tpope/start
