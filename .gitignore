@@ -1,7 +1,9 @@
-#maybe later
+#maybe?
 .bashrc
 .oh-my-zsh/
 .vim/
+.kube/
+.m2/
 
 #don't track
 .bash_history
@@ -29,4 +31,17 @@ Workspace/
 dotfiles/
 shell/
 *.swp
+.CFUserTextEncoding
+.DS_Store
+.zprofile
+.zsh_sessions/
+Applications/
+Desktop/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Tools/
+.Trash/
 

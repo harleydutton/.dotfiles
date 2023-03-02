@@ -1,7 +1,7 @@
 #OH-MY-ZSH (how do I install this? do I need to at this point?)
-/* export ZSH="$HOME/.oh-my-zsh" */
-/* source $ZSH/oh-my-zsh.sh */
-/* plugins=(git) */
+# export ZSH="$HOME/.oh-my-zsh" 
+# source $ZSH/oh-my-zsh.sh 
+# plugins=(git) 
 
 #PROMPT
 PROMPT='%~ > '
@@ -42,10 +42,10 @@ git config --global alias.dr "push -d origin"
 git config --global alias.empty-commit "commit --allow-empty -m 'empty commit'"
 alias gs="git status -s"
 #TODO: add the setting ot automatically configure upstreams
-/* $ git config --global push.autoSetupRemote true */
-/* That command will add to your ~/.gitconfig: */
-/* [push] */
-/*     autoSetupRemote = true */
+# git config --global push.autoSetupRemote true 
+# That command will add to your ~/.gitconfig: 
+# [push] 
+#     autoSetupRemote = true 
 
 #JAVA
 java8(){ export JAVA_HOME=`/usr/libexec/java_home -v 1.8` }
@@ -97,3 +97,4 @@ rvpn(){
 # eval $(ssh-agent); ssh-add ~/.ssh/github
 # probably keychain rather than this
 # perhaps write a script to setup .ssh/github on a new machine
+# tell commentary how to do comments for .zshrc 
