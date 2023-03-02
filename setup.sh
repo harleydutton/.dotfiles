@@ -1,3 +1,15 @@
+
+(
+cd ~
+git init
+git remote add git@github.com:harleydutton/dotfiles.git
+
+
+)
+
+
+
+
 cp .vimrc ~/.vimrc
 cp .inputrc ~/.inputrc
 cp .zshrc ~/.zshrc
