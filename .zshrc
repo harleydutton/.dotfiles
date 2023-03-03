@@ -16,6 +16,7 @@ alias hist="history -i 0"
 alias hg="hist|grep"
 
 #TAB-COMPLETE
+set completion-ignore-case On
 autoload -U compinit promptinit
 promptinit
 compinit -i
