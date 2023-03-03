@@ -16,8 +16,8 @@
 .mozilla/
 .pki/
 .python_history
-.ssh/
 .var/
+.ssh/
 .viminfo
 .vscode/
 .zcompdump*
