@@ -49,7 +49,8 @@ alias kcuc="kc config use-context"
 
 #SILVERBLUE
 alias pm="rpm-ostree"
-alias git="eval $(keychain --eval -q ~/.ssh/github); git"
+gitAuth(){eval $(keychain --eval -q ~/.ssh/github)}
+alias git="gitAuth; git"
 
 # TODO
 # eval $(ssh-agent); ssh-add ~/.ssh/github
