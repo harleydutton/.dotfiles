@@ -1,2 +1,2 @@
 #KEYCHAIN
-eval `keychain -k others --clear --eval --noask ~/.ssh/github`
+eval `keychain -k others --clear --eval`

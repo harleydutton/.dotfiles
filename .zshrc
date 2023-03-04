@@ -49,11 +49,10 @@ alias kcuc="kc config use-context"
 
 #SILVERBLUE
 alias pm="rpm-ostree"
-eval `keychain -k others --eval --noask ~/.ssh/github`              
-
+alias git="keychain -q ~/.ssh/github; git"
 
 # TODO
 # eval $(ssh-agent); ssh-add ~/.ssh/github
-# probably keychain rather than this
+# probably : search highlighting rather than this
 # perhaps write a script to setup .ssh/github on a new machine
 # fix commentary comments in .zshrc
