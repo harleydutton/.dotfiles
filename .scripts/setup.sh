@@ -6,12 +6,12 @@ git init
 git remote add origin git@github.com:harleydutton/dotfiles.git
 echo "*" >> .gitignore
 git commit --allow-empty -m "from setup.sh"
-git branch -u origin/master
-git pull origin master --rebase -X theirs --allow-unrelated-histories
+git branch -u origin/main
+git pull origin main --rebase -X theirs --allow-unrelated-histories
 rm -rf ./dotfiles
 
 #installs
-.scripts/install-commentary.sh
+.scripts/install-commentary.sh #todo: try out tcomment. commentary doesn't work well out of the box
 
 
 #determine package manager
