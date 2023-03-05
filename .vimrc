@@ -6,7 +6,8 @@ set spelllang=en_us "for use with ":set spell" and ":set spell!"
 "SEARCH OPTIONS
 set ic "ignore case in searches
 set hls "highlight searches
-nnoremap <cr> :noh<cr>:<bs><cr> "enter: removes search highlighting
+"enter: removes search highlighting
+nnoremap <silent> <cr> :noh<Bar>:echo <CR>
 
 "WRAP
 set colorcolumn=120 "this highlights the 120th column

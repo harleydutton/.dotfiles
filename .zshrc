@@ -46,9 +46,3 @@ alias klf="kc logs -f"
 alias kcgc="kc config get-contexts"
 alias kccc="kc config current-context"
 alias kcuc="kc config use-context"
-
-# TODO
-# eval $(ssh-agent); ssh-add ~/.ssh/github
-# probably keychain rather than this
-# perhaps write a script to setup .ssh/github on a new machine
-# fix commentary comments in .zshrc
