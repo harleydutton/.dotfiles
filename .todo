@@ -2,9 +2,8 @@
 setup script for .ssh auth on a new machine
 fix commentary comments in .zshrc                               
 autofetcher of some kind for git
-command line clipboard application that works on linux and mac
-https://hluk.github.io/CopyQ/
-pm install copyq
+learn copyq shortcuts
+make copyq open on startup
 
 ## Silverblue
 system specific installer
@@ -12,6 +11,7 @@ noisetorch python noise filtering for discord on silverblue
 
 ## Charter
 system specific installer
+check that copyq works on mac
 
 #installers for...
 #window manager= fuzzel waybar sway
