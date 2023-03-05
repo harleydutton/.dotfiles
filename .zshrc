@@ -47,7 +47,7 @@ alias kcgc="kc config get-contexts"
 alias kccc="kc config current-context"
 alias kcuc="kc config use-context"
 
-#SILVERBLUE
+#SILVERBLUE+SWAYWM
 alias pm="rpm-ostree"
 gitAuth(){eval $(keychain --eval -q ~/.ssh/github)}
 alias git="gitAuth; git"

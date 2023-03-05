@@ -3,6 +3,8 @@ setup script for .ssh auth on a new machine
 fix commentary comments in .zshrc                               
 autofetcher of some kind for git
 command line clipboard application that works on linux and mac
+https://hluk.github.io/CopyQ/
+pm install copyq
 
 ## Silverblue
 system specific installer
