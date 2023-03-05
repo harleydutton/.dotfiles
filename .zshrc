@@ -51,9 +51,3 @@ alias kcuc="kc config use-context"
 alias pm="rpm-ostree"
 gitAuth(){eval $(keychain --eval -q ~/.ssh/github)}
 alias git="gitAuth; git"
-
-# TODO
-# eval $(ssh-agent); ssh-add ~/.ssh/github
-# probably : search highlighting rather than this
-# perhaps write a script to setup .ssh/github on a new machine
-# fix commentary comments in .zshrc
