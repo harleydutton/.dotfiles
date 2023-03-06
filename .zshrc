@@ -1,5 +1,5 @@
 #PROMPT
-PROMPT='%~ > '
+PROMPT='%S%~ > '
 
 #HISTORY
 HISTFILE=~/.histfile
@@ -16,18 +16,18 @@ alias hist="history -i 0"
 alias hg="hist|grep"
 
 #TAB-COMPLETE
+set completion-ignore-case On
 autoload -U compinit promptinit
 promptinit
 compinit -i
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 fpath=(/usr/local/share/zsh-completions $fpath)
-set completion-ignore-case On
 
 #GIT
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
 add-zsh-hook precmd vcs_info
-RPROMPT='${vcs_info_msg_0_}'
+RPROMPT='%S${vcs_info_msg_0_}%s'
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
@@ -52,8 +52,3 @@ rvpn(){
     launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
     launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
 }
-
-# eval $(ssh-agent); ssh-add ~/.ssh/github
-# probably keychain rather than this
-# perhaps write a script to setup .ssh/github on a new machine
-# fix commentary comments in .zshrc

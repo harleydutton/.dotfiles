@@ -1,0 +1,17 @@
+#TODO
+setup script for .ssh auth on a new machine
+fix commentary comments in .zshrc                               
+autofetcher of some kind for git
+command line clipboard application that works on linux and mac
+
+## Silverblue
+system specific installer
+noisetorch python noise filtering for discord on silverblue
+
+## Charter
+system specific installer
+
+#installers for...
+#window manager= fuzzel waybar sway
+#cli=vim zsh python3 ssh java keychain
+#gui=discord obsidian chrome bitwarden
