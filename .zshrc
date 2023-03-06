@@ -23,6 +23,9 @@ compinit -i
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+#SYNTAX-HIGHLIGHTING
+source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 #GIT
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
