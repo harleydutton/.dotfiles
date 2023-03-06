@@ -21,6 +21,7 @@ promptinit
 compinit -i
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 fpath=(/usr/local/share/zsh-completions $fpath)
+set completion-ignore-case On
 
 #GIT
 autoload -Uz add-zsh-hook vcs_info
