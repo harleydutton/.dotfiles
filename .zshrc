@@ -38,7 +38,6 @@ zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
 zstyle ':vcs_info:git:*' formats '%b%u%c'
 alias gs="git status -s"
-# I also want something that will automatically fetch pretty regularly.
 
 #KUBERNETES
 alias kc="kubectl"
