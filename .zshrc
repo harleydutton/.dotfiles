@@ -1,5 +1,5 @@
 #PROMPT
-PROMPT='%~ > '
+PROMPT='%S%~ > %s'
 
 #HISTORY
 HISTFILE=~/.histfile
@@ -23,11 +23,14 @@ compinit -i
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+#SYNTAX-HIGHLIGHTING
+source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 #GIT
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
 add-zsh-hook precmd vcs_info
-RPROMPT='${vcs_info_msg_0_}'
+RPROMPT='%S${vcs_info_msg_0_}%s'
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
