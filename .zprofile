@@ -32,4 +32,4 @@ poc124(){
 globald
 
 #KEYCHAIN
-eval `keychain -k others --clear --eval ~/.ssh/github`
+eval `keychain -k others --eval ~/.ssh/github`

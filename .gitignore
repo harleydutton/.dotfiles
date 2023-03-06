@@ -5,6 +5,7 @@
 .m2/
 
 #don't track
+.z
 .bash_history
 .bash_logout
 .cache/
