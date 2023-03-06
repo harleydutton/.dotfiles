@@ -1,5 +1,5 @@
 #PROMPT
-PROMPT='%S%~ > '
+PROMPT='%S%~ > %s'
 
 #HISTORY
 HISTFILE=~/.histfile
