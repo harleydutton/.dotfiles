@@ -2,31 +2,18 @@
 PROMPT='%S%~ > %s'
 
 #HISTORY
-HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=10000
 HIST_STAMPS="yyyy--mm-dd"
 setopt appendhistory
-autoload -U history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-bindkey "^[[A" history-beginning-search-backward-end
-bindkey "^[[B" history-beginning-search-forward-end
 alias hist="history -i 0"
 alias hg="hist|grep"
 
-#TAB-COMPLETE
-set completion-ignore-case On
-autoload -U compinit promptinit
-promptinit
-compinit -i
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 #PLUGINS
-ZSH_PLUGINS="$HOME/.zsh_plugins"
+export ZSH_PLUGINS=~/.zsh_plugins
 source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_PLUGINS/zsh-z/zsh-z.plugin.zsh
+source $ZSH_PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 #GIT
 autoload -Uz add-zsh-hook vcs_info

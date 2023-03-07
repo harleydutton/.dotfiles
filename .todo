@@ -3,6 +3,7 @@ setup script for .ssh auth on a new machine
 fix commentary comments in .zshrc                               
 autofetcher of some kind for git
 command line clipboard application that works on linux and mac
+tabcomplete and partial-history are both probably plugins. migrate them to being such
 
 ## Silverblue
 system specific installer
