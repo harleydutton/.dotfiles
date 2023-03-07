@@ -1,8 +1,9 @@
 #TODO
-setup script for .ssh auth on a new machine
+setup script for .ssh auth on a new machine.
 fix commentary comments in .zshrc                               
 autofetcher of some kind for git
-command line clipboard application that works on linux and mac
+platform agnostic cli clipboard manager. copyq doesn't work on mac.
+make a thing that will check what of my install list is not installed and maybe install it
 
 ## Silverblue
 system specific installer
@@ -12,6 +13,8 @@ noisetorch python noise filtering for discord on silverblue
 system specific installer
 
 #installers for...
-#window manager= fuzzel waybar sway
-#cli=vim zsh python3 ssh java keychain
+#deps=git bash curl
+#window manager=fuzzel waybar sway
+#cli=vim zsh python3 ssh java keychain copyq?
 #gui=discord obsidian chrome bitwarden
+#zsh-plugins=z autocomplete syntax-highlighting
