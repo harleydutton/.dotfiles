@@ -38,6 +38,9 @@ alias kcgc="kc config get-contexts"
 alias kccc="kc config current-context"
 alias kcuc="kc config use-context"
 
+#MAVEN
+alias mci="mvn clean install"
+
 #CHARTER
 rvpn(){
     launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
