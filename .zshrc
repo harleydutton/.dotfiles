@@ -37,3 +37,6 @@ alias klf="kc logs -f"
 alias kcgc="kc config get-contexts"
 alias kccc="kc config current-context"
 alias kcuc="kc config use-context"
+
+#MAVEN
+alias mci="mvn clean install"

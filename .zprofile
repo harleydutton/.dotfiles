@@ -1,2 +1,2 @@
 #KEYCHAIN
-eval `keychain -k others --eval ~/.ssh/github`
+eval `keychain -q -k others --eval ~/.ssh/github`
