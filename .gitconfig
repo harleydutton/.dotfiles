@@ -7,3 +7,7 @@
     autoSetupRemote = true
 [core]
 	editor = vim
+[user]
+	email = harleydutton@gmail.com
+[init]
+	defaultBranch = main
