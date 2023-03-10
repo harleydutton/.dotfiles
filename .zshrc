@@ -1,10 +1,10 @@
 #PROMPT
-PROMPT='%S%~ > %s'
+PROMPT='%S %~ > %s'
 
 #HISTORY
 HISTSIZE=1000
 SAVEHIST=10000
-HIST_STAMPS="yyyy--mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
 setopt appendhistory
 alias hist="history -i 0"
 alias hg="hist|grep"
@@ -19,7 +19,7 @@ source $ZSH_PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
 add-zsh-hook precmd vcs_info
-RPROMPT='%S${vcs_info_msg_0_}%s'
+RPROMPT='%S ${vcs_info_msg_0_} %s'
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
