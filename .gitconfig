@@ -9,3 +9,5 @@
 	editor = vim
 [user]
 	email = harley.dutton@charter.com
+[init]
+	defaultBranch = main
