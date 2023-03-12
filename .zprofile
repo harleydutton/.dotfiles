@@ -1,2 +1,2 @@
 #KEYCHAIN
-eval `keychain -k others --clear --eval`
+eval `keychain -q -k others --eval ~/.ssh/id_ed25519`
