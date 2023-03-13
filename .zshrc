@@ -41,5 +41,5 @@ alias kcuc="kc config use-context"
 
 #SILVERBLUE+SWAYWM
 alias pm="rpm-ostree"
-gitAuth(){eval $(keychain --eval -q ~/.ssh/id_ed25519)}
-alias git="gitAuth; git"
+addId(){keychain -q ~/.ssh/id_ed25519}
+alias git="addId; git"
