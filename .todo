@@ -4,14 +4,16 @@ autofetcher of some kind for git
 platform agnostic cli clipboard manager. copyq doesn't work on mac.
 
 ## Silverblue
-system specific installer
 try noisetorch
+try kickstart
 
 ## Fedora
 try noisetorch
+try kickstart
 
 ## Charter
-system specific installer
+document the shit I want installed
+make an install script
 
 #installers for...
 #vim zsh keychain fuzzel waybar sway
