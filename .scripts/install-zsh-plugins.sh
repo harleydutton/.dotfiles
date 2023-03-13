@@ -1,3 +1,4 @@
+ZSH_PLUGINS=~/.zhs_plugins
 rm -rf $ZSH_PLUGINS
 mkdir -p $ZSH_PLUGINS
 cd $ZSH_PLUGINS
