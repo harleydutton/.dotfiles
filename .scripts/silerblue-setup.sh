@@ -9,6 +9,7 @@ flatpak install md.obsidian.Obsidian flathub com.discordapp.Discord com.google.C
 #dotfiles-setup.sh
 rpm-ostree install vim zsh keychain sway fuzzel waybar
 #need to setup the thing that sources .zprofile through sway
+#   currently: make the file in home, sudo mkdir /var/usrlocal/share/wayland-sessions/, sudo mv <the file> <there>
 #install vim plugins (commentary)
 #.scripts/install-zsh-plugins.sh
 #sudo lchsh $USER
