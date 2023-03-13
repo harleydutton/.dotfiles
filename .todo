@@ -7,6 +7,7 @@ platform agnostic cli clipboard manager. copyq doesn't work on mac.
 try noisetorch
 try kickstart
 lid switch and power button sleep
+bluetooth
 
 ## Fedora
 try noisetorch
