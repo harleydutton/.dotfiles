@@ -6,8 +6,6 @@ platform agnostic cli clipboard manager. copyq doesn't work on mac.
 ## Silverblue
 try noisetorch
 try kickstart
-lid switch and power button sleep
-bluetooth
 
 ## Fedora
 try noisetorch
@@ -19,6 +17,6 @@ make an install script
 
 #installers for...
 #vim zsh keychain fuzzel waybar sway
-#discord obsidian chrome
+#discord obsidian chrome blueman
 #bitwarden zsh-plugins vim-plugins
 #code java python3
