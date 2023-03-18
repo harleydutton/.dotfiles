@@ -2,13 +2,14 @@
 fix commentary comments in .zshrc                               
 autofetcher of some kind for git
 platform agnostic cli clipboard manager. copyq doesn't work on mac.
+add ahead-behind and stash info to git status alias
 
 ## Silverblue
 try noisetorch
-try kickstart
 key repeat speed
 customize waybar
 media player? pulse/vlc/other
+try kickstart
 
 ## Fedora
 try noisetorch
