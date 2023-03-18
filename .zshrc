@@ -17,7 +17,6 @@ source $ZSH_PLUGINS/zsh-z/zsh-z.plugin.zsh
 source $ZSH_PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 #GIT
-#rprompt = branch * + ^ v 
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
 add-zsh-hook precmd vcs_info
