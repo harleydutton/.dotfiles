@@ -3,7 +3,7 @@ flatpak install md.obsidian.Obsidian flathub com.discordapp.Discord com.google.C
 #git-ssh-setup
 
 #pause
-#install bitwarden
+#install bitwarden (extension?)
 #login to github on chrome
 #add the new pubkey on github
 #dotfiles-setup.sh
