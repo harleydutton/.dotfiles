@@ -1,5 +1,4 @@
 #TODO
-platform agnostic cli clipboard manager. copyq doesn't work on mac.
 
 ## Silverblue
 .desktop to open nm-connector-editor
@@ -15,7 +14,7 @@ screen recoder?
 try kickstart
 
 ## Charter
-nothing right now :)
+nothing rn :)
 
 #installers for...
 #vim zsh keychain fuzzel waybar sway
