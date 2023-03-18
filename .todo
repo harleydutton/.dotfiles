@@ -1,19 +1,17 @@
 #TODO
-fix commentary comments in .zshrc                               
-autofetcher of some kind for git
 platform agnostic cli clipboard manager. copyq doesn't work on mac.
-add ahead-behind and stash info to git status alias
 
 ## Silverblue
 try noisetorch
-key repeat speed
-customize waybar
-media player? pulse/vlc/other
 try kickstart
-
-## Fedora
-try noisetorch
-try kickstart
+adjust brightness
+image viewer
+video player
+music player
+screenshot grabber
+record audio
+record screen
+.desktop to open nm-connector-editor
 
 ## Charter
 document the shit I want installed

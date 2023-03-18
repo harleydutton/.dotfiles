@@ -65,8 +65,10 @@ exec swayidle -w \
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
-# input "1:1:AT_Translated_Set_2_keyboard" {
-# }
+input "1:1:AT_Translated_Set_2_keyboard" {
+    repeat_rate 100
+    repeat_delay 250
+}
 input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
     tap enabled
 }
