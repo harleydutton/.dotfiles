@@ -103,6 +103,13 @@ input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
 
     # Lock screen
     bindsym $mod+x exec $lock
+
+    # Brightness
+    # set brightness logarithmically by factor 1.4
+    # .72 is just slightly bigger than 1 / 1.4
+    # Can swap this to using the XF86BrightnessUp/Down keys once there is a kernel patch.
+    bindsym --locked $mod+F8 exec light -S "$(light -G | awk '{ print int(($1 + .72) * 1.4) }')"
+    bindsym --locked $mod+F7 exec light -S "$(light -G | awk '{ print int($1 / 1.4) }')"
 #
 # Moving around:
 #
