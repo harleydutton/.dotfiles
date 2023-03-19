@@ -1,84 +1,51 @@
 # Default config for sway
-#
 # Copy this to ~/.config/sway/config and edit it to your liking.
-#
 # Read `man 5 sway` for a complete reference.
 
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod1
-# Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
 set $term foot
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
 set $menu fuzzel | xargs swaymsg exec --
-
-# go to lock screen
 set $lock swaylock -f -c 000000
+set $volumeup pactl set-sink-volume @DEFAULT_SINK@ $(( $(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP "[\d]{1,3}%" | grep -oPm 1 "[\d]+") < 100 ? $(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP "[\d]{1,3}%" | grep -oPm 1 "[\d]+")+5 : 100 ))%
+set $volumedown pactl set-sink-volume @DEFAULT_SINK@ -5%
+set $togglemute pactl set-sink-mute @DEFAULT_SINK@ toggle
+set $backlightup light -S "$(light -G | awk '{ print int(($1 + .72) * 1.4) }')"
+set $backlightdown light -S "$(light -G | awk '{ print int($1 / 1.4) }')"
 
 ### Output configuration
-#
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * {
     bg /usr/share/backgrounds/default.png fill
     scale 1
 }
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
 
-### Idle configuration
-#
-# Example configuration:
-#
+### Idle configuration:
 exec swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-
 ### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-
 input "1:1:AT_Translated_Set_2_keyboard" {
     repeat_rate 100
     repeat_delay 250
 }
 input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
     tap enabled
+    # dwt enabled
+    # middle_emulation enabled
 }
 
-
-
 ### Key bindings
-#
-# Basics:
-#
     # Start a terminal
     bindsym $mod+Return exec $term
 
@@ -104,12 +71,17 @@ input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
     # Lock screen
     bindsym $mod+x exec $lock
 
-    # Brightness
-    # set brightness logarithmically by factor 1.4
-    # .72 is just slightly bigger than 1 / 1.4
-    # Can swap this to using the XF86BrightnessUp/Down keys once there is a kernel patch.
-    bindsym --locked $mod+F8 exec light -S "$(light -G | awk '{ print int(($1 + .72) * 1.4) }')"
-    bindsym --locked $mod+F7 exec light -S "$(light -G | awk '{ print int($1 / 1.4) }')"
+
+    # Media keys
+    bindsym --locked $mod+F1 exec $togglemute
+    bindsym --locked $mod+F2 exec $volumedown
+    bindsym --locked $mod+F3 exec $volumeup
+    # rewind            $mod+F4
+    # playpause         $mod+F5
+    # fastforward       $mod+F6
+
+    bindsym --locked $mod+F7 exec $backlightdown
+    bindsym --locked $mod+F8 exec $backlightup
 #
 # Moving around:
 #
