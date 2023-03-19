@@ -43,3 +43,5 @@ alias kcuc="kc config use-context"
 alias pm="rpm-ostree"
 addId(){keychain -q ~/.ssh/id_ed25519}
 alias git="addId; git"
+bindkey  "^[[3~"  delete-char
+
