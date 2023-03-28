@@ -4,5 +4,5 @@
 ./install-commentary.sh
 ./install-zsh-plugins.sh
 ./install-homebrew.sh
-brew install maven keychain 
+brew install maven keychain kubectl
 )
