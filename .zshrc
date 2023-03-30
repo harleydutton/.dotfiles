@@ -46,3 +46,5 @@ rvpn(){
     launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
     launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*
 }
+
+source /Users/P2996224/.docker/init-zsh.sh || true # Added by Docker Desktop

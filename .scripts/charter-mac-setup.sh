@@ -5,10 +5,12 @@
 ./install-zsh-plugins.sh
 ./install-homebrew.sh
 brew install maven keychain kubectl
+brew install --cask amethyst
 )
 # self service = chrome java11 java17 docker intellij 
-# online = postman slack flycut
+# online = postman slack flycut? rectangle
 # setup = outlook webex vip
-# apple store = magnet
+# coworker = .m2 settings
+# email = kube.config files
 
 
