@@ -7,7 +7,7 @@ flatpak install md.obsidian.Obsidian flathub com.discordapp.Discord com.google.C
 #login to github on chrome
 #add the new pubkey on github
 #dotfiles-setup.sh
-rpm-ostree install vim zsh keychain sway fuzzel waybar blueman light
+rpm-ostree install vim zsh keychain sway fuzzel waybar blueman light wlogout
 #sudo mkdir /var/usrlocal/share/wayland-sessions/;sudo cp ~/.sway/zsh-sway.desktop /var/usrlocal/share/wayland-sessions
 #install vim plugins (commentary)
 #~/.scripts/install-zsh-plugins.sh
