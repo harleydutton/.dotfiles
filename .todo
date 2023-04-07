@@ -12,11 +12,3 @@ try noisetorch to handle the shitty laptop mic
 
 ## Charter
 system specific installer
-
-#installers for...
-base=git keychain
-nice=zsh vim chrome
-wm=sway waybar fuzzel
-gui=vscode discord obsidian
-other=vim-plugins zsh-plugins bitwarden-chrome-extension java python3
-needed?=curl wget brew java python ssh bash
