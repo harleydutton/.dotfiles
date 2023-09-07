@@ -41,7 +41,9 @@ alias kcuc="kc config use-context"
 
 #SILVERBLUE+SWAYWM
 alias pm="rpm-ostree"
-addId(){keychain -q ~/.ssh/id_ed25519}
-alias git="addId; git"
-bindkey  "^[[3~"  delete-char
+addId(){keychain -q ~/.ssh/id_ed25519} #I would rather have this automatic
+alias git="addId; git" #I would rather have this automatic
+bindkey  "^[[3~"  delete-char #delete key
 
+#MAVEN
+alias mci="mvn clean install"

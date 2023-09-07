@@ -1,19 +1,18 @@
-#ALL
-nothing rn :)
+## framework laptop
+- figure out why zsh keeps crashing (probs plugins)
+- get ssh keys to work with keychain so git doesn't ask me for my password every 2 seconds
+- make computer hybernate on power-button-short-press/lid-close and sleep on the other to handle power issues
+- try noisetorch
+- screenshot tool?
+- audio recorder?
+- screen recoder?
+- video player?
+- music player?
+- clipboard manager?
 
-## Silverblue
-figure out why zsh keeps crashing (probs plugins)
-.desktop to open gnome-control-center wifi
-clipboard manager
-try noisetorch
-bitwarden app? https://community.bitwarden.com/t/bitwarden-should-manage-its-flathub-application/30823/21?page=2
-try kickstart
-screenshot tool?
-audio recorder?
-screen recoder?
-video player?
-music player?
-
-## Charter
-nothing rn :)
-
+## reinstall checklist
+- cli: git zsh vim
+- wm: sway waybar fuzzel
+- gui: discord obsidian cockatrice chrome bitwarden
+- plugins: vim-plugins zsh-plugins
+- toolbox: vscode java python vim zsh etc.
