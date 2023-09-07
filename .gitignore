@@ -1,28 +1,35 @@
-
-#general
+#git
 *
+!*/
+*/*
 !.gitignore
 !.gitconfig
+
+#Workspace
 !Workspace/vov/placeholder
+
+#this
 !.scripts/*
 !.todo
-!.profile
+
+#ssh
 !.ssh/config
 
 #bash
-!.bashrc
 !.bash_profile
+!.profile
+!.bashrc
 !.bash_logout
 
 #vim
 !.vimrc
-!.vim/*
+#!.vim/*
 
 #zsh
 !.zshenv
 !.zprofile
 !.zshrc
-!.zsh_plugins/*
+#!.zsh_plugins/*
 
 #framework
 !.sway/*
