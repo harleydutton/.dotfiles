@@ -12,7 +12,7 @@ alias hg="hist|grep"
 
 #PLUGINS
 ZSH_PLUGINS=~/.zsh_plugins
-source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_PLUGINS/zsh-z/zsh-z.plugin.zsh
 source $ZSH_PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
@@ -30,20 +30,13 @@ alias gs="git status -s"
 #KUBERNETES
 alias kc="kubectl"
 alias keti="kc exec -ti"
-# the below are dubiously useful. consider removing
-alias kgn="kc get ns"
-alias kgp="kc get pods"
-alias kdp="kc describe pods"
-alias klf="kc logs -f"
-alias kcgc="kc config get-contexts"
-alias kccc="kc config current-context"
-alias kcuc="kc config use-context"
 
 #SILVERBLUE+SWAYWM
 alias pm="rpm-ostree"
 addId(){keychain -q ~/.ssh/id_ed25519} #I would rather have this automatic
 alias git="addId; git" #I would rather have this automatic
 bindkey  "^[[3~"  delete-char #delete key
+alias te="toolbox enter"
 
 #MAVEN
 alias mci="mvn clean install"
