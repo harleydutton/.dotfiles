@@ -1,4 +1,3 @@
-echo "zsh plugin dir: "$ZSH_PLUGINS
 rm -rf $ZSH_PLUGINS
 mkdir -p $ZSH_PLUGINS
 cd $ZSH_PLUGINS

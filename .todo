@@ -1,11 +1,11 @@
 ## all
 - assimilate and destroy the other three branches
-- make sure silverblue modifications are done correctly (see .sway)
-- figure out why cargo is getting added to path multiple times
 
 ## framework laptop
 - get ssh keys to work with keychain so git doesn't ask me for my password every 2 seconds
-- make computer hybernate on power-button-short-press/lid-close and sleep on the other to handle power issues
+- make computer hybernate on power-button-short-press/lid-close and sleep on the other to handle power issues. see the #idle config in .config/sway/config and... I'm not sure where the lid close stuff is
+- make sure silverblue modifications are done correctly (see .sway)
+- figure out why cargo is getting added to path multiple times
 - try noisetorch
 - screenshot tool?
 - audio recorder?
@@ -19,4 +19,4 @@
 - wm: sway waybar fuzzel
 - gui: discord obsidian cockatrice chrome bitwarden
 - plugins: vim-plugins zsh-plugins
-- toolbox: vscode java python vim zsh etc.
+- toolbox: vscode java python vim zsh
