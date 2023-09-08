@@ -16,7 +16,9 @@
 !.scripts/
 !.scripts/*
 !Workspace/
-!Workspace/placeholder
+Workspace/*
+!Workspace/vov/
+!Workspace/**/placeholder
 
 #sway
 !.sway/
