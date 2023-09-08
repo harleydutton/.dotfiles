@@ -1,0 +1,72 @@
+#ignore all root files but not directories
+*
+!*/
+
+#ignore directories
+Desktop/
+Downloads/
+Videos/
+Music/
+Pictures/
+Public/
+Templates/
+.local/
+.cargo/
+.vscode/
+
+#unignore things
+
+#bash
+!.bash_logout
+!.bash_profile
+!.bashrc
+!.profile
+
+#git
+!.gitconfig
+!.gitignore
+
+#this
+!.todo
+!.scripts/*
+Workspace/*
+!Workspace/placeholder
+
+#framework
+!.sway/*
+
+#ssh
+!.ssh/config
+
+#vim
+!.vimrc
+
+#zsh
+!.zprofile
+!.zshenv
+!.zshrc
+
+
+
+
+
+
+#later dirs
+.config/*
+.zsh_plugins/
+.vim/
+
+#later unignore
+!.config/waybar/config
+!.config/sway/config
+
+# !.vim/*
+# !.zsh_plugins/*
+
+# !Workspace/placeholder
+# !Workspace/vov/placeholder
+
+
+
+
+
