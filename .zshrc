@@ -11,8 +11,6 @@ alias hist="history -i 0"
 alias hg="hist|grep"
 
 #PLUGINS
-ZSH_PLUGINS=~/.zsh_plugins
-# source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_PLUGINS/zsh-z/zsh-z.plugin.zsh
 source $ZSH_PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
