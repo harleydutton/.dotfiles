@@ -52,13 +52,16 @@ Workspace/*
 
 
 #later dirs
-.config/*
+/.config/*
+!.config/sway/
+!.config/waybar/
+!.config/**/config
+
+
 .zsh_plugins/
 .vim/
 
 #later unignore
-!.config/waybar/config
-!.config/sway/config
 
 # !.vim/*
 # !.zsh_plugins/*
