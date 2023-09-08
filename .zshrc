@@ -2,11 +2,7 @@
 PROMPT='%S %~ > %s'
 
 #HISTORY
-HISTSIZE=1000
-SAVEHIST=10000
-HISTFILE=~/.zsh_history
-HIST_STAMPS="yyyy-mm-dd"
-setopt appendhistory
+setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
 
@@ -29,7 +25,7 @@ alias gs="git status -s"
 alias kc="kubectl"
 alias keti="kc exec -ti"
 
-#SILVERBLUE+SWAYWM
+#FRAMEWORK
 alias pm="rpm-ostree"
 addId(){keychain -q ~/.ssh/id_ed25519} #I would rather have this automatic
 alias git="addId; git" #I would rather have this automatic
