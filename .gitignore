@@ -44,9 +44,9 @@ Workspace/
 !.zshrc
 
 #later
-# !.config/waybar/config
-# !.config/sway/config
-# !.ssh/config
+!.config/waybar/config
+!.config/sway/config
+!.ssh/config
 !.sway/*
 !.scripts/*
 # !.vim/*
