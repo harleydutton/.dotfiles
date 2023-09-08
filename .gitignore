@@ -47,8 +47,8 @@ Workspace/
 # !.config/waybar/config
 # !.config/sway/config
 # !.ssh/config
-# !.sway/*
-# !.scripts/*
+!.sway/*
+!.scripts/*
 # !.vim/*
 # !.zsh_plugins/*
 # Workspace/*
