@@ -1,5 +1,6 @@
 ## all
 - make sure silverblue modifications are done correctly (see .sway)
+- figure out why cargo is getting added to path multiple times
 
 ## framework laptop
 - figure out why zsh keeps crashing (probs plugins). make sure I have uninstalled the correct ones. probs just nuke the plugins dir and start over
