@@ -6,9 +6,13 @@ setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
 
-#PLUGINS
+#COMPLETE
 source $ZSH_PLUGINS/zsh-z/zsh-z.plugin.zsh
 source $ZSH_PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+#SSH
+eval `ssh-agent` > /dev/null
+ssh-add -q ~/.ssh/id_ed25519 
 
 #GIT
 autoload -Uz add-zsh-hook vcs_info
@@ -27,8 +31,6 @@ alias keti="kc exec -ti"
 
 #FRAMEWORK
 alias pm="rpm-ostree"
-addId(){keychain -q ~/.ssh/id_ed25519} #I would rather have this automatic
-alias git="addId; git" #I would rather have this automatic
 bindkey  "^[[3~"  delete-char #delete key
 alias te="toolbox enter"
 

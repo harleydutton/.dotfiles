@@ -1,11 +1,9 @@
 ## all
-- assimilate and destroy the other three branches
+- not really a problem now that history is saved but zsh still crashing sometimes. See error: No such shell function `.autocomplete__history-search__zle-widget'
 
 ## framework laptop
-- get ssh keys to work with keychain so git doesn't ask me for my password every 2 seconds
-- make computer hybernate on power-button-short-press/lid-close and sleep on the other to handle power issues. see the #idle config in .config/sway/config and... I'm not sure where the lid close stuff is
+- make computer hybernate on power-button-short-press or lid-close and sleep on the other to handle power issues. see the #idle config in .config/sway/config and... I'm not sure where the lid close stuff is
 - make sure silverblue modifications are done correctly (see ~/.sway/*)
-- figure out why cargo is getting added to path multiple times
 - try noisetorch
 - screenshot tool?
 - audio recorder?
@@ -13,6 +11,7 @@
 - video player?
 - music player?
 - clipboard manager?
+- figure out why usr and local bins are getting added to path multiple times
 
 ## reinstall checklist
 - cli: git zsh vim

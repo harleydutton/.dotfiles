@@ -34,7 +34,7 @@
 
 #KEYCHAIN
 # eval `keychain -q -k others --eval ~/.ssh/id_ed25519 ~/.ssh/pi_id_ed25519`
-eval `keychain -q -k others --eval ~/.ssh/id_ed25519`
+# eval `keychain -q -k others --eval ~/.ssh/id_ed25519`
 
 
 # Added by Toolbox App
