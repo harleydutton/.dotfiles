@@ -15,9 +15,6 @@
 !.todo
 !.scripts/
 !.scripts/*
-!Workspace/
-!Workspace/vov/
-!Workspace/**/placeholder
 
 #sway
 !.sway/

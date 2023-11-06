@@ -1,8 +1,10 @@
 ## all
-- not really a problem now that history is saved but zsh still crashing sometimes. See error: No such shell function `.autocomplete__history-search__zle-widget'
+- not really a problem now that history is saved but zsh still crashing sometimes. 
+    - free(): corrupted unsorted chunks Error: ls                                            
+    - No such shell function `.autocomplete__history-search__zle-widget'
 
 ## framework laptop
-- make computer hybernate on power-button-short-press or lid-close and sleep on the other to handle power issues. see the #idle config in .config/sway/config and... I'm not sure where the lid close stuff is
+- figure out power issues: make computer hybernate on power-button-short-press or lid-close and sleep on the other to handle power issues. see the #idle config in .config/sway/config and... I'm not sure where the lid close stuff is
 - make sure silverblue modifications are done correctly (see ~/.sway/*)
 - try noisetorch
 - screenshot tool?
