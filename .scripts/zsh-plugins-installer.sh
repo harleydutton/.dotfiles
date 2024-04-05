@@ -1,5 +1,5 @@
-rm -rf $ZSH_PLUGINS
-mkdir -p $ZSH_PLUGINS
-cd $ZSH_PLUGINS
+rm -rf ~/.zsh_plugins
+mkdir ~/.zsh_plugins
+cd ~./zsh_plugins
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 git clone https://github.com/agkozak/zsh-z.git
