@@ -31,3 +31,6 @@ alias keti="kc exec -ti"
 
 #MAVEN
 alias mci="mvn clean install"
+
+#TOOLBOX
+if [[ "$HOST" == "toolbox" ]]; then export ACCENT=◇ ; PROMPT="$ACCENT $PROMPT"; fi
