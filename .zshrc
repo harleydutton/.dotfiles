@@ -34,3 +34,5 @@ alias mci="mvn clean install"
 
 #TOOLBOX
 if [[ "$HOST" == "toolbox" ]]; then export ACCENT=◇ ; PROMPT="$ACCENT $PROMPT"; fi
+alias te="toolbox enter"
+alias tl="toolbox list"
