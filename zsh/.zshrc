@@ -2,6 +2,7 @@
 PROMPT='%S %~ > %s'
 
 #HISTORY
+HISTFILE=~/.histfile
 setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
