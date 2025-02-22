@@ -7,10 +7,10 @@ setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
 
-#DELETE
+#ZSH DELETE FIX
 bindkey "^[[3~" delete-char
 
-#COMPLETE
+#AUTOCOMPLETE
 source ~/.zsh_plugins/zsh-z/zsh-z.plugin.zsh
 source ~/.zsh_plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
@@ -29,12 +29,12 @@ zstyle ':vcs_info:*' stagedstr ' +'
 zstyle ':vcs_info:git:*' formats '%b%u%c'
 alias gs="git status -s"
 
+#TAR
+alias targz="tar -xf"
+
 #KUBERNETES
 alias kc="kubectl"
 alias keti="kc exec -ti"
-
-#JAVA
-JAVA_HOME=/usr/bin/java
 
 #MAVEN
 alias mci="mvn clean install"
@@ -45,5 +45,5 @@ alias te="toolbox enter"
 alias tl="toolbox list"
 alias tc="toolbox create"
 
-#ATOMIC
+#FEDORA ATOMIC
 alias pm="rpm-ostree"
