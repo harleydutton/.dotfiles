@@ -48,7 +48,7 @@ alias te="toolbox enter"
 tb-name () {
     cat /run/.containerenv | sed -n 2p | awk -F '"' 'NF>2{print $2}'
 }
-if [ "$HOST" = "toolbx" ]; then PROMPT="[$(tb-name)]$PROMPT"; fi
+if [ "$HOST" = "toolbx" ]; then PROMPT="%S[$(tb-name)]%s$PROMPT"; fi
 
 #FEDORA ATOMIC
 alias pm="rpm-ostree"
@@ -58,6 +58,7 @@ if [ $HOST = "toolbx" ]; then
     if [[ $(tb-name) = "appium" ]]; then
         #export PATH=$PATH:/usr/local/go/bin
         JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
+        PATH=/home/hdutton/bin/node_modules/bin:$PATH
     fi
 fi
 
