@@ -1,24 +1,21 @@
-#PROMPT
+#ZSH
+##PROMPT
 PROMPT='%S %~ > %s'
 
-#HISTORY
+##HISTORY
 HISTFILE=~/.histfile
 setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
 
-#ZSH DELETE FIX
+##ZSH DELETE FIX
 bindkey "^[[3~" delete-char
 
-#AUTOCOMPLETE
+##AUTOCOMPLETE
 source ~/.zsh_plugins/zsh-z/zsh-z.plugin.zsh
 source ~/.zsh_plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
-#SSH
-eval `ssh-agent` > /dev/null
-ssh-add -q ~/.ssh/id_ed25519 
-
-#GIT
+##GIT STATUS RPROMPT
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
 add-zsh-hook precmd vcs_info
@@ -28,6 +25,13 @@ zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
 zstyle ':vcs_info:git:*' formats '%b%u%c'
 alias gs="git status -s"
+
+#LS
+alias lsla="ls -la"
+
+#SSH
+eval `ssh-agent` > /dev/null
+ssh-add -q ~/.ssh/id_ed25519 
 
 #TAR
 alias targz="tar -xf"
@@ -40,10 +44,20 @@ alias keti="kc exec -ti"
 alias mci="mvn clean install"
 
 #TOOLBOX
-if [[ "$HOST" == "toolbox" ]]; then export ACCENT=◇ ; PROMPT="$ACCENT $PROMPT"; fi
 alias te="toolbox enter"
-alias tl="toolbox list"
-alias tc="toolbox create"
+tb-name () {
+    cat /run/.containerenv | sed -n 2p | awk -F '"' 'NF>2{print $2}'
+}
+if [ "$HOST" = "toolbx" ]; then PROMPT="[$(tb-name)]$PROMPT"; fi
 
 #FEDORA ATOMIC
 alias pm="rpm-ostree"
+
+#TOOLBOX TEMP
+if [ $HOST = "toolbx" ]; then
+    if [[ $(tb-name) = "appium" ]]; then
+        #export PATH=$PATH:/usr/local/go/bin
+        JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
+    fi
+fi
+
