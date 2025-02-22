@@ -38,3 +38,6 @@ if [[ "$HOST" == "toolbox" ]]; then export ACCENT=◇ ; PROMPT="$ACCENT $PROMPT"
 alias te="toolbox enter"
 alias tl="toolbox list"
 alias tc="toolbox create"
+
+#ATOMIC
+alias pm="rpm-ostree"
