@@ -33,6 +33,9 @@ alias gs="git status -s"
 alias kc="kubectl"
 alias keti="kc exec -ti"
 
+#JAVA
+JAVA_HOME=/usr/bin/java
+
 #MAVEN
 alias mci="mvn clean install"
 
