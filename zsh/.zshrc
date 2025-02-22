@@ -7,6 +7,9 @@ setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
 
+#DELETE
+bindkey "^[[3~" delete-char
+
 #COMPLETE
 source ~/.zsh_plugins/zsh-z/zsh-z.plugin.zsh
 source ~/.zsh_plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
