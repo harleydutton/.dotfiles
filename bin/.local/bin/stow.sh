@@ -5,6 +5,7 @@ stow ssh
 stow sway
 stow vim
 stow zsh
+stow bin
 
 
 #   Have a dotfiles directory that is structured as to how they should be structured at $HOME

@@ -26,8 +26,8 @@ zstyle ':vcs_info:*' stagedstr ' +'
 zstyle ':vcs_info:git:*' formats '%b%u%c'
 alias gs="git status -s"
 
-#LS
-alias lsla="ls -la"
+#BIN
+export PATH=/home/hdutton/.local/bin:$PATH
 
 #SSH
 eval `ssh-agent` > /dev/null
@@ -64,7 +64,6 @@ if [[ $HOST == "toolbx" ]]; then
     fi
     if [[ $(tb-name) == "yt-dlp" ]]; then
         alias dl="yt-dlp -x"
-        export PATH=/home/hdutton/.local/bin:$PATH
     fi
 fi
 
