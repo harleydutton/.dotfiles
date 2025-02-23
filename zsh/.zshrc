@@ -62,5 +62,9 @@ if [[ $HOST == "toolbx" ]]; then
         export PATH=/home/hdutton/bin/android-studio/bin:$PATH
         export PATH=/home/hdutton/Android/Sdk:$PATH
     fi
+    if [[ $(tb-name) == "yt-dlp" ]]; then
+        alias dl="yt-dlp -x"
+        export PATH=/home/hdutton/.local/bin:$PATH
+    fi
 fi
 
