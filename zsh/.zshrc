@@ -56,10 +56,11 @@ alias pm="rpm-ostree"
 #TOOLBOX TEMP
 if [[ $HOST == "toolbx" ]]; then
     if [[ $(tb-name) == "appium" ]]; then
-        #export PATH=$PATH:/usr/local/go/bin
-        JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
-        PATH=/home/hdutton/bin/node_modules/bin:$PATH
-        PATH=/home/hdutton/bin/android-studio/bin:$PATH
+        export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+        export ANDROID_HOME=/home/hdutton/Android/Sdk
+        export PATH=/home/hdutton/bin/node_modules/bin:$PATH
+        export PATH=/home/hdutton/bin/android-studio/bin:$PATH
+        export PATH=/home/hdutton/Android/Sdk:$PATH
     fi
 fi
 
