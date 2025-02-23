@@ -1,9 +1,9 @@
 #ZSH
 ##PROMPT
-PROMPT='%S %~ > %s'
+export PROMPT='%S %~ > %s'
 
 ##HISTORY
-HISTFILE=~/.histfile
+export HISTFILE=~/.histfile
 setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
@@ -19,7 +19,7 @@ source ~/.zsh_plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 autoload -Uz add-zsh-hook vcs_info
 setopt prompt_subst
 add-zsh-hook precmd vcs_info
-RPROMPT='%S ${vcs_info_msg_0_} %s'
+export RPROMPT='%S ${vcs_info_msg_0_} %s'
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
