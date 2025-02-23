@@ -59,6 +59,7 @@ if [[ $HOST == "toolbx" ]]; then
         #export PATH=$PATH:/usr/local/go/bin
         JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
         PATH=/home/hdutton/bin/node_modules/bin:$PATH
+        PATH=/home/hdutton/bin/android-studio/bin:$PATH
     fi
 fi
 
