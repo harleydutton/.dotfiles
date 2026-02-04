@@ -1,12 +1,12 @@
 ## Setup Script
-### Prerecs: bash, git, stow, dnf
+
+Prerecs: bash, git, ssh
+untested: best to run line-by-line
 
 ``` bash
 cd ~ \
 git clone https://github.com/harleydutton/.dotfiles.git \
 cd .dotfiles/bin/bin/scripts/ \
 stow.sh \
-cli-setup.sh \
-code-install.sh \
 ssh-keygen.sh \
 ```
