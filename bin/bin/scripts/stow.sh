@@ -7,10 +7,10 @@ stow vim
 stow zsh
 stow bin
 
+#   needs the stow utility installed
+#   when run, overwrites the contents of each folder to it's location in home
 
-#   Have a dotfiles directory that is structured as to how they should be structured at $HOME
-#   dotfiles_home=~/dotfiles/home  # for example
-
+# untested alternative that uses symlinks
 #   cp -rsf "$dotfiles_home"/. ~
 #       -r: Recursive, create the necessary directory for each file
 #       -s: Create symlinks instead of copying
