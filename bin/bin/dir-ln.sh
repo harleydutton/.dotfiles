@@ -1,22 +1,6 @@
 #!/usr/bin/env bash
-
-for top in "$1"/*; do
-  if [[ "$top" == "." ]] || [[ "$top" == ".." ]] || [[ "$top" == ".git" ]] || [[ "$top" == "README.md" ]] then
-    continue
-  fi
-  find "$top" -type f | while read -r file; do
-    rel=$(dirname "$file")
-    mkdir -p "$2${rel#$top}"
-    ln -sf "$file" "$2${file#$top}"
-  done
-done
-
-
-
-
-
-
-
-
-
-
+while read -r file; do
+  rel=$(dirname "${file#$1}")
+  mkdir -p "$2$rel"
+  ln -sf "$file" "$2${file#$1}"
+done <<< $(find $1 -type f ! -wholename "*/.git/*")
