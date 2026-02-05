@@ -1,10 +1,8 @@
-# #!/usr/bin/env bash
-cp -rsf $1/. ~/temp
+#!/usr/bin/env bash
+cp -sf $1/. ~/temp
 # -r = recursive, create directories for each file
 # -s = create symlinks instead of copying
 # -f = overwrite previously existing files/symlinks
-#
-#
 
 #   # --- Configuration ---
 #   # Directory where your dotfiles are stored

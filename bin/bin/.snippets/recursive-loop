@@ -1,5 +1,5 @@
 for top in *; do
-  if [[ "$top" == "." ]] || [[ "$top" == ".." ]] || [[ "$top" == ".git" ]]; then
+  if [[ "$top" == "." ]] || [[ "$top" == ".." ]]; then
     continue
   else
     find "$top" -type f -print0 | while read -r -d '' file; do
@@ -7,3 +7,29 @@ for top in *; do
     done
   fi
 done
+
+
+#   #!/usr/bin/env bash
+#   traverse(){
+#     for file in "$1"/*; do
+#       if [ -d "$file" ]; then
+#         echo "dir: $file"
+#         traverse "$file"
+#       elif [ -f "$file" ]; then
+#         echo "file: $file"
+#       fi
+#     done
+#   }
+
+
+
+#   for top in $1/*; do
+#     if [[ "$top" == "." ]] || [[ "$top" == ".." ]] || [[ "$top" == ".git" ]]; then
+#       continue
+#     else
+#       find "$top" -type f -print0 | while read -r -d '' file; do
+#         
+#         cp -rsf $1/. $2
+#       done
+#     fi
+#   done
