@@ -8,7 +8,7 @@ setopt share_history
 alias hist="history -i 0"
 alias hg="hist|grep"
 
-##ZSH DELETE FIX
+##ZSH DELETE FIX (laptop specific?)
 bindkey "^[[3~" delete-char
 
 ##AUTOCOMPLETE
@@ -28,6 +28,7 @@ alias gs="git status -s"
 
 #BIN
 export PATH=/home/hdutton/.local/bin:$PATH
+export PATH=/home/hdutton/bin:$PATH
 
 #SSH
 eval `ssh-agent` > /dev/null

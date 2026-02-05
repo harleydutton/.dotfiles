@@ -1,1 +1,8 @@
-to some extent these scripts will always be system dependent but I would like to decouple them from the specific OS if I can. I think if I have an alias or variable that allows me to abstract away the specific package manager I can get much closer to that goal though it still assumes a format of <pm> install <package> which may not hold true, expecially for flags like "-y" (yes to all install questions). I may be better off making OS specific scripts and labeling them as such. Maybe put them in OS specific folders.
+I would like to remove my need for stow. This likely means writing a script that does it's job using unix/posix compliant utilities.
+
+something like:
+
+cp-rsf <from-dir> <to-dir>
+r = recursive, create directories for each file
+s = create symlinks instead of copying
+f = overwrite previously existing files/symlinks
