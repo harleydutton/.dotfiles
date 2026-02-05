@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 for top in "$1"/*; do
-  if [[ "$top" == "." ]] || [[ "$top" == ".." ]] || [[ "$top" == ".git" ]] then
+  if [[ "$top" == "." ]] || [[ "$top" == ".." ]] || [[ "$top" == ".git" ]] || [[ "$top" == "README.md" ]] then
     continue
   fi
   find "$top" -type f | while read -r file; do
