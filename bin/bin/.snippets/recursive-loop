@@ -1,13 +1,9 @@
-for file in * .[a-zA-Z0-9]; do
-    if [["$file" == "." || "$file" == ".." ]]; then #exceptions
-        continue
-    fi
-    if [-d "file"]; then
-        find "$file" -type f | while read -r subfile; do
-        relative_path="${subfile#$file/}"
-        echo $relative_path/$file #EDIT THIS
-    else
-        echo $file #EDIT THIS
-    fi
+for top in *; do
+  if [[ "$top" == "." ]] || [[ "$top" == ".." ]] || [[ "$top" == ".git" ]]; then
+    continue
+  else
+    find "$top" -type f -print0 | while read -r -d '' file; do
+      echo "$file"
+    done
+  fi
 done
-
