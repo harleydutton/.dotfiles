@@ -1,8 +1,0 @@
-I would like to remove my need for stow. This likely means writing a script that does it's job using unix/posix compliant utilities.
-
-something like:
-
-cp-rsf <from-dir> <to-dir>
-r = recursive, create directories for each file
-s = create symlinks instead of copying
-f = overwrite previously existing files/symlinks

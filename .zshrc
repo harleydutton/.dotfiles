@@ -28,7 +28,6 @@ alias gs="git status -s"
 
 #BIN
 export PATH=/home/hdutton/.local/bin:$PATH
-export PATH=/home/hdutton/bin:$PATH
 
 #SSH
 eval `ssh-agent` > /dev/null
