@@ -18,3 +18,4 @@ ssh-keygen.sh \
 - rss module for waybar?
 - calendar module waybar?
 - email (and text? discord?) notification module for waybar
+- figure out why upper right power icon is broken. (shutdown not working)
