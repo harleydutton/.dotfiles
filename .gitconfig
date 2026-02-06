@@ -1,7 +1,7 @@
 [alias]
 	dl = branch -D
 	dr = push -d origin
-	empty-commit = commit --allow-empty -m 'empty commit'
+	ec = commit --allow-empty -m 'empty commit'
 	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)      %C(bold blue)<%an>%Creset' --abbrev-commit
     tr = ls-tree -r --name-status
 [push]

@@ -1,6 +1,6 @@
 "MISCELLANEOUS
-set nu "line numbers on
-command NU set nu! nu? "adds line numbers toggle command
+command! NU set number! "toggles line numbers
+command! RLN set relativenumber! "toggles relative line numbers
 set spelllang=en_us "for use with ":set spell" and ":set spell!"
 
 "SEARCH OPTIONS
