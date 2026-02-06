@@ -11,8 +11,9 @@ ssh-keygen.sh \
 ```
 
 ### notes
-- tell zsh to start in a toolbox most of the time
-- remove ads from mom's tablet
-- get zsh to stop being annoying when using arrow keys
-
-
+- make atomic shell start in toolbox unless otherwise indicated
+- get zsh to stop being annoying when using arrow keysts
+- find some way to integrate google keep and waybar (taskwarrior and syncall?)
+- rss module for waybar?
+- calendar module waybar?
+- email (and text? discord?) notification module for waybar
