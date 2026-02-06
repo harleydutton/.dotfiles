@@ -25,7 +25,6 @@ zstyle ':autocomplete:*' append-semicolon no #diable annoying
 #bindkey -M menuselect '^[[C' .forward-char '^[OC' .forward-char
 #bindkey -M menuselect '^[[D' .backward-char '^[OD' .backward-char 
 
-
 ##HISTORY
 export HISTFILE=~/.histfile
 setopt share_history
