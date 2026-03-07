@@ -63,6 +63,14 @@ alias mci="mvn clean install"
 #FEDORA ATOMIC
 alias pm="rpm-ostree"
 
+# Tailscale shortcuts
+alias ts='podman exec tailscale tailscale'
+alias ts-status='podman exec tailscale tailscale status'
+alias ts-ip='podman exec tailscale tailscale ip'
+alias ts-exit='podman exec tailscale tailscale set -exit-node'
+alias ts-exit-off='podman exec tailscale tailscale set --exit-node='
+alias ts-login='podman exec tailscale tailscale login'
+
 
 #TOOLBOX TEMP
 if [[ $HOST == "toolbx" ]]; then
@@ -77,4 +85,10 @@ if [[ $HOST == "toolbx" ]]; then
         alias dl="yt-dlp -x"
     fi
 fi
+
+# Godot and Rust
+export LD_LIBRARY_PATH=/var/home/hdutton/Workspace/tof/godot/addons/tof/bin:$LD_LIBRARY_PATH
+
+
+
 

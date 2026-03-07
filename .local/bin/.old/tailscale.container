@@ -1,0 +1,32 @@
+
+#this is a podman quadlet file. it goes in ~/.config/containers/systemd
+# relevant commands are systemctl --user stop tailscale; systemctl --user daemon-reload; systemctl --user start tailscale; sustemctl --user status tailscale
+
+
+[Unit]
+Description=Tailscale VPN
+After=network-online.target
+Wants=network-online.target
+
+[Container]
+Image=docker.io/tailscale/tailscale:stable
+ContainerName=tailscale
+
+# Persist state across reboots
+Volume=tailscale-state:/var/lib/tailscale:Z
+
+# Configuration
+Environment=TS_STATE_DIR=/var/lib/tailscale
+Environment=TS_HOSTNAME=fedora-sway
+Environment=TS_AUTH_ONCE=true
+Environment=TS_ACCEPT_DNS=true
+#Environment=TS_USERSPACE=false
+Network=host
+PodmanArgs=--privileged --cap-add=NET_ADMIN --cap-add=NET_RAW --device=/dev/net/tun
+
+[Service]
+Restart=always
+TimeoutStartSec=300
+
+[Install]
+WantedBy=default.target

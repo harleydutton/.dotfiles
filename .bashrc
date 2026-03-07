@@ -6,3 +6,4 @@ echo "Harley, This is Bash. Install ZSH"
 export HISTFILE=~/.histfile
 
 export PATH=/home/hdutton/.local/bin:$PATH
+. "$HOME/.cargo/env"
