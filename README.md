@@ -15,6 +15,7 @@ chsh -s $(which zsh)
 
 ### notes
 - might have problems because using ssh. If so, remember to change it to ssh at the end (~/.dotfiles/git/config)
+- git remote set-url origin git@github.com:harleydutton/.dotfiles.git
 - find some way to integrate google keep and waybar (taskwarrior and syncall?)
 - rss module for waybar?
 - calendar module waybar?
