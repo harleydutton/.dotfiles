@@ -1,5 +1,8 @@
 # .bashrc
-echo "Harley, This is Bash. Install ZSH"
+# Only show if interactive AND stdout is a terminal (not a pipe)
+if [[ $- == *i* ]] && [ -t 1 ]; then
+    echo "Reminder: Install ZSH and chsh"
+fi
 
 # Bandaid Settings
 # .inputrc makes tab-complete case insensitive
