@@ -6,16 +6,17 @@ untested: best to run line-by-line
 ``` bash
 cd ~ \
 mkdir Workspace \
-git clone https://github.com/harleydutton/.dotfiles.git \
-cd ./dotfiles/.local/bin \
-dir-ln.sh ~/.dotfiles ~ ".*(/\.git/|README\.md|root).*" \
+git clone git@github.com/harleydutton/.dotfiles.git \
+cd .dotfiles/.local/bin \
+./dir-ln.sh ~/.dotfiles ~ ".*(/\.git/|README\.md|root).*" \
 ssh-keygen.sh \
+chsh -s $(which zsh)
 ```
 
 ### notes
-- make atomic shell start in toolbox unless otherwise indicated
+- might have problems because using ssh. If so, remember to change it to ssh at the end (~/.dotfiles/git/config)
+- git remote set-url origin git@github.com:harleydutton/.dotfiles.git
 - find some way to integrate google keep and waybar (taskwarrior and syncall?)
 - rss module for waybar?
 - calendar module waybar?
 - email (and text? discord?) notification module for waybar
-- figure out why upper right power icon is broken. (shutdown not working)

@@ -10,6 +10,7 @@
 	editor = vim
 [user]
 	email = harleydutton@gmail.com
+	name = harleydutton
 [init]
 	defaultBranch = main
 [pull]
