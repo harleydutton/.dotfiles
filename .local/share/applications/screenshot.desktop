@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=screenshot
+Comment=Take a screenshot
+Exec=/var/home/hdutton/.local/bin/screenshot.sh
+Terminal=false
+Categories=Utility;
