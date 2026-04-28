@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=monitor
+Comment=system monitoring application
+Exec=toolbox run -c sys btop
+Terminal=true
+Categories=Utility;
