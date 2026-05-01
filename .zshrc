@@ -6,6 +6,11 @@ source ~/.zsh_plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh_plugins/fzf/shell/key-bindings.zsh #ctrl+r
 export PATH="$HOME/.zsh_plugins/fzf/bin:$PATH"
 
+#DEFAULT EDITOR
+if command -v vim &>/dev/null; then
+  export EDITOR=vim
+fi
+
 #USER BIN
 export PATH=/home/hdutton/.local/bin:$PATH
 
