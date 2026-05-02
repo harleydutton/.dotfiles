@@ -7,11 +7,19 @@ import chromaprint
 import numpy as np
 import time
 
+#   def fingerprint(file):
+#     return chromaprint.decode_fingerprint(subprocess.run(
+#       f"opustags '{file}' | grep '^fingerprint=' | sed 's/fingerprint=//'", 
+#       shell=True,capture_output=True,text=True
+#     ).stdout.strip().encode('ascii'))[0]
+
 def fingerprint(file):
-  return chromaprint.decode_fingerprint(subprocess.run(
-    f"opustags '{file}' | grep '^fingerprint=' | sed 's/fingerprint=//'", 
-    shell=True,capture_output=True,text=True
-  ).stdout.strip().encode('ascii'))[0]
+    opustags = subprocess.run(
+        ['opustags', file],
+        capture_output=True, text=True
+    )
+    line = next((l for l in opustags.stdout.splitlines() if l.startswith('fingerprint=')), None)
+    return chromaprint.decode_fingerprint(line.removeprefix('fingerprint=').encode('ascii'))[0]
 
 def compare(f1, f2,
                          probe_seconds: float = 30.0,
