@@ -1,12 +1,20 @@
 # default system toolbox -- included:
+
 # monitor.desktop (btop)
+sudo dnf install -y btop
 # screenshot.sh (grim, slurp, wl-copy)
-# music download (yt-dlp)
-# dupes.py (opustags)
+sudo dnf install -y grim slurp wl-copy
 # music-sync.sh (rclone)
-# tagger.sh (fpcalc)
-# unsure: ffprobe, ffmpeg, libshaderc, spirv-tools, python3-pip)
+sudo dnf install -y rclone 
+
+# music download (yt-dlp)
+#sudo dnf install -y yt-dlp ffprobe ffmpeg python3-pip
+#python3 -m pip install -U --pre "yt-dlp[default]"
+#sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
+
+# dedupeing app (opustags, fpcalc)
+sudo dnf instlal -y opustags fpcalc
 # pip reqs in pipx or similar: numpy, chromaprint
-sudo dnf install -y grim slurp wl-copy btop rclone ffmpeg ffprobe python3-pip spirv-tools libshaderc opustags
-python3 -m pip install -U --pre "yt-dlp[default]"
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
+
+
+# unsure: spirv-tools libshaderc
