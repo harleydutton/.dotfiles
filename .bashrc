@@ -9,4 +9,4 @@ fi
 export HISTFILE=~/.histfile
 
 export PATH=/home/hdutton/.local/bin:$PATH
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"

@@ -21,3 +21,4 @@ history-consolidate.sh \
 - rss module for waybar?
 - email, tasks, and calendar for PC?
 - rclone config: /home/hdutton/.config/rclone/rclone.conf
+- seems like toolboxes aren't sharing history

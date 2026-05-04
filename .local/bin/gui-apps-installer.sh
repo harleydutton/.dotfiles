@@ -3,4 +3,5 @@ flatpak install com.valvesoftware.Steam \
 com.discordapp.Discord \
 com.visualstudio.code \
 io.github.Cockatrice.cockatrice \
+md.obsidian.Obsidian \
 
