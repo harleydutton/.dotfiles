@@ -1,22 +1,18 @@
 ## Setup Script
 
-Prerecs: bash, git, ssh
+Prerecs: git, ssh
 untested: best to run line-by-line
 
 ``` bash
-cd ~ \
-mkdir Workspace \
-git clone git@github.com/harleydutton/.dotfiles.git \
-cd .dotfiles/.local/bin \
-./dir-ln.sh ~/.dotfiles ~ ".*(/\.git/|README\.md|root).*" \
-ssh-keygen.sh \
-chsh -s $(which zsh)
+sudo rpm-ostree install vim zsh \
+mkdir ~/Workspace \
+cd ~; git clone https://github.com/harleydutton/.dotfiles.git \
+cd ~/.dotfiles; git remote set-url origin git@github.com:harleydutton/.dotfiles.git \
+cd ~/.dotfiles/.local/bin; ./dir-ln.sh ~/.dotfiles ~ ".*(/\.git/|README\.md|root).*"; ssh-keygen.sh \
+# reboot
+sudo chsh $USER -s $(which zsh)
 ```
 
 ### notes
-- might have problems because using ssh. If so, remember to change it to ssh at the end (~/.dotfiles/git/config)
-- git remote set-url origin git@github.com:harleydutton/.dotfiles.git
-- find some way to integrate google keep and waybar (taskwarrior and syncall?)
 - rss module for waybar?
-- calendar module waybar?
-- email (and text? discord?) notification module for waybar
+- email, tasks, and calendar for PC?
