@@ -20,4 +20,4 @@ history-consolidate.sh \
 ### notes
 - rss module for waybar?
 - email, tasks, and calendar for PC?
-- rclone config savable?
+- rclone config: /home/hdutton/.config/rclone/rclone.conf

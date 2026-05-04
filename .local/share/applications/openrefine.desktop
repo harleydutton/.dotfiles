@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=OpenRefine
-Comment=Tool for working with messy data
-Exec=bash -c 'toolbox run -c openrefine $HOME/bin/openrefine-3.10.0/refine & xdg-open http://127.0.0.1:3333'
-Icon=openrefine
-Terminal=false
-Type=Application
-Categories=Utility;DataVisualization;

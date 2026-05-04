@@ -13,7 +13,7 @@ sudo dnf install -y rclone
 #sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
 
 # dedupeing app (opustags, fpcalc)
-sudo dnf instlal -y opustags fpcalc
+#sudo dnf install -y opustags fpcalc
 # pip reqs in pipx or similar: numpy, chromaprint
 
 
