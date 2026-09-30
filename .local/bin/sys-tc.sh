@@ -4,6 +4,7 @@ toolbox create sys
 toolbox run -c sys bash -c "sudo dnf install -y btop" #monitoring
 toolbox run -c sys bash -c "sudo dnf install -y grim slurp wl-copy" #screenshot
 toolbox run -c sys bash -c "sudo dnf install -y rclone" #music sync
+toolbox run -c sys bash -c "sudo dnf install yt-dlp" #yt-dlp
 
 # music download (yt-dlp)
 #sudo dnf install -y yt-dlp ffprobe ffmpeg python3-pip
