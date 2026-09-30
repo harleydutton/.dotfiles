@@ -7,9 +7,10 @@ untested: best to run line-by-line
 sudo rpm-ostree install vim zsh \
 mkdir ~/Workspace \
 cd ~; git clone https://github.com/harleydutton/.dotfiles.git \
+cd ~/.dotfiles/.local/bin; ./dir-ln.sh ~/.dotfiles ~ ".*(/\.git/|README\.md|root).*" \
 cd ~/.dotfiles; git remote set-url origin git@github.com:harleydutton/.dotfiles.git \
-cd ~/.dotfiles/.local/bin; ./dir-ln.sh ~/.dotfiles ~ ".*(/\.git/|README\.md|root).*"; ./ssh-keygen.sh; \
-# reboot
+cd ~/.local/bin/; ./ssh-keygen.sh \
+# add ssh key to github and reboot
 sudo chsh $USER -s $(which zsh) \
 toolbox create sys \
 toolbox run -c sys cli-setup.fedora.sh \

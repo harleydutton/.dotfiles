@@ -1,0 +1,6 @@
+[Unit]
+Description=Updates all ZSH plugin git repos
+
+[Service]
+Type=oneshot
+ExecStart=/var/home/hdutton/.local/bin/zsh-plugins-updater.sh

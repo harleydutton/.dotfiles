@@ -1,0 +1,9 @@
+[Unit]
+Description=Updates ZSH plugins regularly
+
+[Timer]
+OnCalendar=weekly
+Persistient=true
+
+[Install]
+WantedBy=default.target
