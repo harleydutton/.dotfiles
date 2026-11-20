@@ -7,7 +7,7 @@ untested: best to run line-by-line
 sudo rpm-ostree install vim zsh \
 mkdir ~/Workspace \
 cd ~; git clone https://github.com/harleydutton/.dotfiles.git \
-cd ~/.dotfiles/.local/bin; ./dir-ln.sh ~/.dotfiles ~ ".*(/\.git/|README\.md|root).*" \
+cd ~/.dotfiles/.local/bin; ./dir-ln.sh
 cd ~/.dotfiles; git remote set-url origin git@github.com:harleydutton/.dotfiles.git \
 cd ~/.local/bin/; ./ssh-keygen.sh \
 # add ssh key to github and reboot
